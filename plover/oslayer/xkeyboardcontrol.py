@@ -35,7 +35,31 @@ but could not be found."
 
 keyboard_capture_instances = []
 
-KEYCODE_TO_PSEUDOKEY = {38: ord("a"),
+#german atempt to layout by t.gatterer@tsn.at'
+
+KEYCODE_TO_PSEUDOKEY = {
+			24: ord("s"),
+			25: ord("b"),
+			26: ord("g"),
+			27: ord("r"),
+			30: ord("r"),
+			31: ord("m"),
+			32: ord("g"),
+			33: ord("s"),
+			38: ord("s"),
+			39: ord("k"),
+			40: ord("w"),
+			41: ord("r"),
+			44: ord("l"),
+			45: ord("b"),
+			46: ord("d"),
+			54: ord("a"),
+			55: ord("o"),
+			57: ord("e"),
+			58: ord("u")}
+
+"""
+			38: ord("a"),
                         24: ord("q"),
                         25: ord("w"),
                         39: ord("s"),
@@ -73,6 +97,7 @@ KEYCODE_TO_PSEUDOKEY = {38: ord("a"),
                         19: ord("0"),
                         20: ord("-"),
                         21: ord("=")}
+"""
 
 class KeyboardCapture(threading.Thread):
     """Listen to keyboard press and release events."""
